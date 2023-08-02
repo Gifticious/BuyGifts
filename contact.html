@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+          Gifticious|Contact
+        </title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  if (sidebar.style.left === '-250px') {
+    sidebar.style.left = '0';
+  } else {
+    sidebar.style.left = '-250px';
+  }
+}
+</script>
+<link rel="stylesheet" href="style/navbar.css">
+<link rel="stylesheet" href="style/shop.css">
+<div class="wrapper">
+  
+  <div class="top_navbar">
+    <button class="toggle-btn" onclick="toggleSidebar()">
+      <div class="hamburger">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+     </div></button>
+    <div class="top_menu">
+      <div class="logo">
+         Gifticious
+      </div>
+    </div>
+  </div>
+  
+  <div class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="index.html" >
+          <span class="icon"><i class="fa fa-home"></i></span>
+          <span class="title">home</span>
+          </a></li>
+        <li><a href="product.html">
+          <span class="icon"><i class="fa fa-gift"></i></span>
+          <span class="title">Product</span>
+          </a></li>
+        <li><a href="contact.html"class="active">
+          <span class="icon"><i class="fa fa-phone"></i></span>
+          <span class="title">Contact</span>
+          </a></li>
+        <li><a href="" >
+          <span class="icon"><i class="fa fa-star"></i></span>
+          <span class="title">Review</span>
+          </a></li>
+    </ul>
+  </div>
+
+
+    <body>
+        <div class="main_container">
+            <h1><b>Contact</b></h1><br>
+            <dav><span class="icon"><i class="fa fa-group"></i></span>
+          <span class="title">Gifticious</span><bR><br>
+          <span class="icon"><i class="fa fa-instagram"></i></span>
+          <span class="title"><a href="">@_gifticious_</a></span><br><br>
+          <span class="icon"><i class="fa fa-envelope"></i></span>
+          <span class="title">Giftkart.love@gmail.com</span>
+        </div></dav>
+    </body>
+</html>
+<style>
+    h1 {
+        text-align: center;
+        font-size: 72;
+    }
+    dav {
+        text-align: center;
+        font-size: 24;
+    }
+</style>
