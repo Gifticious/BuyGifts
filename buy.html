@@ -26,7 +26,7 @@
       <option value="party_hamper">Party Hamper Rs.399</option>
       <option value="sweet_hamper">Sweet Hmaper Rs.199</option>
     </select>  
-    <input type="submit" value="Buy" name="submit">
+    <input type="submit" value="Buy" name="submit" onclick="setTimeout(myFunction, 5000)">
     
 
   </form>
@@ -37,9 +37,12 @@
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for buying Products from Gifiticious"))
+                .then(response => alert("Order placed"))
                 .catch(error => console.error('Error!', error.message))
             })
+            function myFunction(){
+      window.location.href="index.html"
+    }
           </script>
 
 
