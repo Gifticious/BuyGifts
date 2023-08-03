@@ -36,11 +36,8 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("done"))
+            .then(response =>  window.location.href="index.html")
             .catch(error => console.error('Error!', error.message))
         })
-        function myFunction(){
-          window.location.href="index.html"
-        }
       </script>
   </div>
