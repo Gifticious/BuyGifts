@@ -44,6 +44,13 @@ body{
   border-radius: 5px;
 }
 
+.wrapper .top_navbar .logoimg img{
+  width: 70px;
+  height: 70px;
+  margin: -10px -17px;
+  border-radius: 0px;
+}
+
 .wrapper .top_navbar .top_menu{
   width: calc(100% - 70px);
   height: 100%;
