@@ -11,6 +11,8 @@
 
 body{
   background: #e1ecf2;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper{
@@ -18,14 +20,14 @@ body{
 }
 
 .wrapper .top_navbar{
-  width: calc(100% - 20px);
+  width: calc(100% - 10px);
   height: 60px;
   display: flex;
   position: fixed;
   top: 10px;
 }
 
-.wrapper .top_navbar .hamburger{
+.wrapper .top_navbar .logoimg{
   width: 70px;
   height: 100%;
   background: #2e4ead;
@@ -34,7 +36,7 @@ body{
   cursor: pointer;
 }
 
-.wrapper .top_navbar .hamburger div{
+.wrapper .top_navbar .logoimg div{
   width: 35px;
   height: 4px;
   background: #92a6e2;
@@ -91,15 +93,18 @@ body{
   top: 70px;
   left: 10px;
   background: #2e4ead;
-  width: 200px;
+  width: 70px;
   height: calc(100% - 80px);
   border-bottom-left-radius: 20px;
   transition: all 0.3s ease;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.wrapper .sidebar ul li a{
-    display: block;
-    padding: 20px;
+.wrapper .sidebar a{
+  display: flex;
+  padding: 20px;
     color: #fff;
     position: relative;
     margin-bottom: 1px;
@@ -107,7 +112,7 @@ body{
     white-space: nowrap;
 }
 
-.wrapper .sidebar ul li a:before{
+.wrapper .sidebar a:before{
   content: "";
   position: absolute;
   top: 0;
@@ -118,31 +123,28 @@ body{
   display: none;
 }
 
-.wrapper .sidebar ul li a span.icon{
-  margin-right: 10px;
+.wrapper .sidebar a span.icon{
+  font-size: 20px;
+}
+
+.wrapper .sidebar a span.title{
   display: inline-block;
 }
 
-.wrapper .sidebar ul li a span.title{
-  display: inline-block;
-}
-
-.wrapper .sidebar ul li a:hover,
-.wrapper .sidebar ul li a.active{
+.wrapper .sidebar a:hover,
+.wrapper .sidebar a.active{
   background: #4360b5;
   color: #fff;
 }
 
-.wrapper .sidebar ul li a:hover:before,
-.wrapper .sidebar ul li a.active:before{
+.wrapper .sidebar  a:hover:before,
+.wrapper .sidebar  a.active:before{
   display: block;
 }
 
 .wrapper .main_container{
-  width: (100% - 200px);
-  margin-top: 70px;
-  margin-left: 200px;
-  padding: 15px;
+  margin-left: 70px;
+  padding: 20px;
   transition: all 0.3s ease;
 }
 
@@ -158,15 +160,15 @@ body{
   width: 70px;
 }
 
-.wrapper.collapse .sidebar ul li a{
+.wrapper.collapse .sidebar a{
   text-align: center; 
 }
 
-.wrapper.collapse .sidebar ul li a span.icon{
+.wrapper.collapse .sidebar a span.icon{
   margin: 0;
 }
 
-.wrapper.collapse .sidebar ul li a span.title{
+.wrapper.collapse .sidebar a span.title{
   display: none;
 }
 button {
