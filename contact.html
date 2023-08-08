@@ -8,26 +8,14 @@
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-function toggleSidebar() {
-  const sidebar = document.getElementById('sidebar');
-  if (sidebar.style.left === '-250px') {
-    sidebar.style.left = '0';
-  } else {
-    sidebar.style.left = '-250px';
-  }
-}
-</script>
 <link rel="stylesheet" href="style/navbar.css">
 <link rel="stylesheet" href="style/shop.css">
+
 <div class="wrapper">
   
   <div class="top_navbar">
-    <button class="toggle-btn" onclick="toggleSidebar()">
-      <div class="hamburger">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
+      <div class="logoimg">
+<img src="logo.png">
      </div></button>
     <div class="top_menu">
       <div class="logo">
@@ -35,28 +23,74 @@ function toggleSidebar() {
       </div>
     </div>
   </div>
+  <body>
+      <div class="sidebar">
+          <a href="index.html" >
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+          </a>
+          <a href="product.html">
+              <i class="fas fa-gifts"></i>
+              <span>Product</span>
+          </a>
+          <a href="contact.html" class="active">
+              <i class="fas fa-phone-alt"></i>
+              <span>Contact</span>
+          </a>
+          <a href="https://g.co/kgs/voZcjF">
+              <i class="fas fa-star"></i>
+              <span>Review</span>
+          </a>
+      </div>
   
-  <div class="sidebar" id="sidebar">
-      <ul>
-        <li><a href="index.html" >
-          <span class="icon"><i class="fa fa-home"></i></span>
-          <span class="title">home</span>
-          </a></li>
-        <li><a href="product.html">
-          <span class="icon"><i class="fa fa-gift"></i></span>
-          <span class="title">Product</span>
-          </a></li>
-        <li><a href="contact.html"class="active">
-          <span class="icon"><i class="fa fa-phone"></i></span>
-          <span class="title">Contact</span>
-          </a></li>
-        <li><a href="https://g.page/r/CYgvB8Kj9Fq-EB0/review" >
-          <span class="icon"><i class="fa fa-star"></i></span>
-          <span class="title">Review</span>
-          </a></li>
-    </ul>
-  </div>
+      <div class="content">
+          <!-- Your main content goes here -->
+      </div>
+  </body>
+  </html>
 
+  <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.sidebar i {
+    font-size: 20px;
+}
+
+.content {
+    margin-left: 70px;
+    padding: 20px;
+}
+
+  </style>
 
     <body>
         <div class="main_container">
